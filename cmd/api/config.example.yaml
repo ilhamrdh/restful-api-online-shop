@@ -1,0 +1,18 @@
+app:
+    name: name_app
+    port: ":port_app"
+    encryption:
+        salt: 10
+        jwt_secret: your_secret_key
+
+database:
+    host: db_host
+    port: db_port
+    name: db_name
+    user: db_user
+    pass: db_password
+    connection_pool:
+        max_idle_connection: 10
+        max_open_connection: 30
+        max_lifetime_connection: 60 #second
+        max_idletime_connection: 60 #second
